@@ -19,7 +19,7 @@ const config: webpack.Configuration = {
     ],
   },
   entry: {
-    __less: "./public/style/main.less",
+    __less: "./style/main.less",
   },
   module: {
     rules: [

@@ -4,7 +4,7 @@ import webpack from "webpack";
 
 const config: webpack.Configuration = {
   entry: {
-    __less: "./public/style/main.less",
+    __less: "./style/main.less",
   },
   module: {
     rules: [
@@ -23,12 +23,12 @@ const config: webpack.Configuration = {
     extensions: [".less"],
   },
   output: {
-    filename: "[name]-dev.js",
+    filename: "[name].js",
     path: path.resolve("public"),
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "bundle-dev.css",
+      filename: "bundle.css",
     }),
   ],
 };
